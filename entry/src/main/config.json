@@ -1,0 +1,38 @@
+{
+  "app": {
+    "vendor": "example",
+    "bundleName": "com.github.kqakqakqa.zhshi.game2048",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0.20250523"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "deviceType": [
+      "liteWearable"
+    ],
+    "abilities": [
+      {
+        "name": "default",
+        "icon": "$media:icon",
+        "label": "$string:entry_MainAbility",
+        "type": "page"
+      }
+    ],
+    "distro": {
+      "moduleType": "entry",
+      "deliveryWithInstall": true,
+      "moduleName": "entry"
+    },
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/about/about"
+        ],
+        "name": "default"
+      }
+    ]
+  }
+}

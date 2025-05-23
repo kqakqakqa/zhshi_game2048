@@ -1,0 +1,6 @@
+<div class="body" on:click="onBack">
+  <text style="font-size: 18px;">枳实系列</text>
+  <text style="font-size: 38px; margin-bottom: 6px;">2048</text>
+  <text style="margin-bottom: 6px;">v1.0.0.20250523</text>
+  <text style="width: 50%; font-size: 18px; text-align: center;">kqakqakqa.github.io/zhshi_game2048</text>
+</div>
