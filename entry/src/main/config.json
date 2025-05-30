@@ -1,6 +1,6 @@
 {
   "app": {
-    "vendor": "example",
+    "vendor": "kqakqakqa",
     "bundleName": "com.github.kqakqakqa.zhshi.game2048",
     "version": {
       "code": 1000000,
@@ -24,6 +24,16 @@
       "moduleType": "entry",
       "deliveryWithInstall": true,
       "moduleName": "entry"
+    },
+    "distroFilter": {
+      "screenShape": {
+        "policy": "include",
+        "value": ["circle"]
+      },
+      "screenWindow": {
+        "policy": "include",
+        "value": ["454*454"]
+      }
     },
     "js": [
       {

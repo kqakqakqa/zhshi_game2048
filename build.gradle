@@ -5,7 +5,7 @@ apply plugin: 'com.huawei.ohos.app'
 ohos {
     signingConfigs {
     }
-    compileSdkVersion 7
+    compileSdkVersion 6
 }
 
 buildscript {

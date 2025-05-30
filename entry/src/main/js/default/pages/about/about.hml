@@ -1,6 +1,7 @@
-<div class="body" on:click="onBack">
-  <text style="font-size: 18px;">枳实系列</text>
-  <text style="font-size: 38px; margin-bottom: 6px;">2048</text>
-  <text style="margin-bottom: 6px;">v1.0.0.20250523</text>
-  <text style="width: 50%; font-size: 18px; text-align: center;">kqakqakqa.github.io/zhshi_game2048</text>
+<div style="width: 454px; height: 454px; align-items: center; justify-content: center; flex-direction: column;" on:swipe="onBack">
+  <text style="font-size: 30px;">枳实系列</text>
+  <text style="font-size: 38px;">2048</text>
+  <text style="font-size: 30px; margin-bottom: 12px;">v1.0.0.20250523</text>
+  <text style="width: 454px; font-size: 30px; text-align: center; color: #aaaaaa; border-color: #aaaaaa;">github.com/kqakqakqa/</text>
+  <text style="width: 454px; font-size: 30px; text-align: center; color: #aaaaaa;">zhshi_game2048/</text>
 </div>

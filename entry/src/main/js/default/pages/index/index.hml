@@ -1,38 +1,35 @@
-<stack class="container-stack">
-    <div class="background">
-      <div class="grid" on:swipe="onGridSwipe">
-        <div class="grid-row" for="{{ grid }}">
-          <div class="grid-cell" for="{{ $item }}">
-            <div class="grid-cell-background"
-                 style="background-color: {{numberBlockBackgroundColors[$item]}};"
+<stack style="width: 454px; height: 454px;">
+    <div class="background" style="width: 454px; height: 454px; align-items: center; justify-content: center; background-color: #faf8ef;">
+      <div style="width: 311.9px; height: 311.9px; background-color: #bbada0; border-radius: 8px; align-items: center; justify-content: center; flex-direction: column;" on:swipe="onGridSwipe">
+        <div style="width: 311.9px; height: 70.5px; margin-top: 3.7px; margin-bottom: 3.7px; background-color: transparent; align-items: center; justify-content: center;" for="{{ grid }}">
+          <div style="width: 70.5px; height: 70.5px; margin-left: 3.7px; margin-right: 3.7px; border-radius: 4px; background-color: #ccc0b4; align-items: center; justify-content: center;" for="{{ $item }}">
+            <div style="width: 70.5px; height: 70.5px; border-radius: 4px; align-items: center; justify-content: center; text-align: center; background-color: {{numberBlockBackgroundColors[$item]}};"
                  if="{{ $item!==0 }}">
-              <text class="grid-cell-number"
-                    style=" color:{{getNumberBlockColor($item)}}; font-size: {{ getNumberBlockFontSize($item)}};"
+              <text style="align-items: center; justify-content: center; text-align: center; color:{{getNumberBlockColor($item)}}; font-size: {{ getNumberBlockFontSize($item)}};"
                     >{{ $item }}</text>
             </div>
           </div>
         </div>
       </div>
     </div>
-  <div class="scores">
-    <text class="scores-text">当前 {{score}}</text>
-    <text class="scores-text">最高 {{highScore}}</text>
+  <div style="width: 454px; height:71.0px; background-color: transparent; align-items: center; justify-content: center; flex-direction: column;">
+    <text style="color: #776e65;">当前 {{score}}</text>
+    <text style="color: #776e65;">最高 {{highScore}}</text>
   </div>
-  <div class="replay" on:swipe="onReplaySwipe">
+  <div style="width: 136.2px; height: 43.8px; top: 396.6px; left: 158.9px; border-radius: 8px; background-color: #8f7a66; align-items: center; justify-content: center;" on:swipe="onReplaySwipe">
     <text class="replay-text">重来 >></text>
   </div>
-  <div class="left-side-swipe"
-       style="background-color: {{showLeftSideSwipe?'#cc777777':'#00000000'}};"
+  <div style="width: 45.4px; height: 454px; background-color: {{showLeftSideSwipe?'#cc777777':'#00000000'}};"
        on:swipe="onLeftSideSwipe">
-    <div class="side-swipe-content" if="{{ showLeftSideSwipe }}">
+    <div style="width: 45.4px; height: 454px; background-color: transparent; align-items: center; justify-content: center;" if="{{ showLeftSideSwipe }}">
       <text>{{'《 '}}</text>
     </div>
   </div>
   <div class="top-side-swipe"
-       style="background-color: {{showTopSideSwipe?'#cc777777':'#00000000'}};"
+       style="width: 454px; height: 45.4px; background-color: {{showTopSideSwipe?'#cc777777':'#00000000'}};"
        on:swipe="onTopSideSwipe">
-    <div class="side-swipe-content" if="{{ showTopSideSwipe }}">
-      <text style="font-size: 18px;">关于</text>
+    <div style="width: 454px; height: 45.4px; background-color: transparent; align-items: center; justify-content: center;" if="{{ showTopSideSwipe }}">
+      <text>关于</text>
     </div>
   </div>
 </stack>

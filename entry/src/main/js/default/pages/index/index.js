@@ -36,9 +36,9 @@ export default {
     getNumberBlockFontSize(n){
       if(n<16) return "30px";
       if(n<128) return "30px;"
-      if(n<1024) return "18px;"
-      if(n<16384) return "18px;"
-      return "14px;"
+      if(n<1024) return "26px;"
+      if(n<16384) return "26px;"
+      return "22px;"
     },
     newGrid(){
       let grid = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
