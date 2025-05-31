@@ -11,7 +11,7 @@ ohos {
     buildTypes {
         release {
             proguardOpt {
-                proguardEnabled false
+                proguardEnabled true
                 rulesFiles 'proguard-rules.pro'
             }
         }

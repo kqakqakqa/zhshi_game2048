@@ -3,8 +3,8 @@
     "vendor": "kqakqakqa",
     "bundleName": "com.github.kqakqakqa.zhshi.game2048",
     "version": {
-      "code": 1000000,
-      "name": "1.0.0.20250523"
+      "code": 1000002,
+      "name": "1.0.2.20250601"
     }
   },
   "deviceConfig": {},

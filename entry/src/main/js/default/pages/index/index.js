@@ -11,29 +11,32 @@ export default {
     grid: [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
     score: 0,
     highScore: 0,
-    numberBlockBackgroundColors:{
-      2:"#eee4da",
-      4:"#ede0c8",
-      8:"#f2b179",
-      16:"#f59563",
-      32:"#f67c5f",
-      64:"#f65e3b",
-      128:"#edcf72",
-      256:"#edcc61",
-      512:"#edc850",
-      1024:"#edc53f",
-      2048:"#edc22e",
-      4096:"#edbf1d",
-      8192:"#edbc0c",
-      16384:"#edb900",
-      32768:"#edb600",
-      65536:"#edb300",
-      131072:"#edb000",
+    getCellBgColor(n) {
+      return {
+        "0":"#ccc0b4",
+        "2":"#eee4da",
+        "4":"#ede0c8",
+        "8":"#f2b179",
+        "16":"#f59563",
+        "32":"#f67c5f",
+        "64":"#f65e3b",
+        "128":"#edcf72",
+        "256":"#edcc61",
+        "512":"#edc850",
+        "1024":"#edc53f",
+        "2048":"#edc22e",
+        "4096":"#edbf1d",
+        "8192":"#edbc0c",
+        "16384":"#edb900",
+        "32768":"#edb600",
+        "65536":"#edb300",
+        "131072":"#edb000",
+      }[n];
     },
-    getNumberBlockColor(n){
+    getCellColor(n){
       return (n>4)?"#f9f6f2":"#776e65";
     },
-    getNumberBlockFontSize(n){
+    getCellFontSize(n){
       if(n<16) return "30px";
       if(n<128) return "30px;"
       if(n<1024) return "26px;"

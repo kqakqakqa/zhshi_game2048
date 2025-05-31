@@ -2,11 +2,10 @@
     <div class="background" style="width: 454px; height: 454px; align-items: center; justify-content: center; background-color: #faf8ef;">
       <div style="width: 311.9px; height: 311.9px; background-color: #bbada0; border-radius: 8px; align-items: center; justify-content: center; flex-direction: column;" on:swipe="onGridSwipe">
         <div style="width: 311.9px; height: 70.5px; margin-top: 3.7px; margin-bottom: 3.7px; background-color: transparent; align-items: center; justify-content: center;" for="{{ grid }}">
-          <div style="width: 70.5px; height: 70.5px; margin-left: 3.7px; margin-right: 3.7px; border-radius: 4px; background-color: #ccc0b4; align-items: center; justify-content: center;" for="{{ $item }}">
-            <div style="width: 70.5px; height: 70.5px; border-radius: 4px; align-items: center; justify-content: center; text-align: center; background-color: {{numberBlockBackgroundColors[$item]}};"
-                 if="{{ $item!==0 }}">
-              <text style="align-items: center; justify-content: center; text-align: center; color:{{getNumberBlockColor($item)}}; font-size: {{ getNumberBlockFontSize($item)}};"
-                    >{{ $item }}</text>
+          <div style="width: 70.5px; height: 70.5px; margin-left: 3.7px; margin-right: 3.7px; border-radius: 4px; background-color: transparent;" for="{{ $item }}">
+            <div style="width: 70.5px; height: 70.5px; border-radius: 4px; align-items: center; justify-content: center; text-align: center; background-color: {{getCellBgColor($item)}};">
+              <text style="align-items: center; justify-content: center; text-align: center; color:{{ getCellColor($item) }}; font-size: {{ getCellFontSize($item)}};"
+                    >{{ ($item !== 0 ? $item : "") }}</text>
             </div>
           </div>
         </div>
